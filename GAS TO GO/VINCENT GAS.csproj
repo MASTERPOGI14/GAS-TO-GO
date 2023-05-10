@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DEAB4FA3-34A1-4674-B762-E8622008FC2B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>GAS_TO_GO</RootNamespace>
+    <AssemblyName>GAS TO GO</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CREDIT CARD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CREDIT CARD.Designer.cs">
+      <DependentUpon>CREDIT CARD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DIESEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DIESEL.Designer.cs">
+      <DependentUpon>DIESEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PROGRESS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PROGRESS.Designer.cs">
+      <DependentUpon>PROGRESS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FuelType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FuelType.Designer.cs">
+      <DependentUpon>FuelType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PREMIUM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PREMIUM.Designer.cs">
+      <DependentUpon>PREMIUM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RECEIPT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RECEIPT.Designer.cs">
+      <DependentUpon>RECEIPT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UNLEADED.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UNLEADED.Designer.cs">
+      <DependentUpon>UNLEADED.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CREDIT CARD.resx">
+      <DependentUpon>CREDIT CARD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DIESEL.resx">
+      <DependentUpon>DIESEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FuelType.resx">
+      <DependentUpon>FuelType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PREMIUM.resx">
+      <DependentUpon>PREMIUM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PROGRESS.resx">
+      <DependentUpon>PROGRESS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RECEIPT.resx">
+      <DependentUpon>RECEIPT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UNLEADED.resx">
+      <DependentUpon>UNLEADED.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
